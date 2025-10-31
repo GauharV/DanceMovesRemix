@@ -21,9 +21,11 @@ public class DanceRoutine {
     }
     public String remixRoutine(){
         StringBuilder remix = new StringBuilder(buildRoutine());
-        remix.insert(0,"\n");
+        remix.append("\nBackwards Boohbah Shuffle!");
+        remix.insert(0,"----REMIX---\n");
+        remix.delete(0,1);
         remix.reverse();
-        remix.append("\nBackwardsBoohbahStuff");
+
 
         return remix.toString();
     }
